@@ -1,0 +1,306 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bank of Sparks</title>
+        <meta name ="viewport"content="width=device-width ,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gabriela&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+   
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header{
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+#body1{
+    position: fixed;
+    width: 100%;
+}
+.container{
+    margin-right: -50px;
+    margin-left: 650px;
+    
+}
+.logo{
+    margin-top: 30px;
+    width: 100px;
+}
+.header-text{
+    max-width: 350px;
+    margin-top: 140px;
+}
+.h1{
+    font-size: 34px;
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: black;
+    margin:15px 0;
+}
+.button{
+    padding: 18px 40px;
+    background: transparent;
+    outline:none ;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: green;
+    color: white;
+    
+}
+p{
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.line1{
+    width: 15px;
+    height: 15px;
+    background: green;
+    display: inline-block;
+}
+.line2{
+    width: 80px;
+    height: 1px;
+    background: green;
+    display: inline-block;
+}
+.line3{
+    width: 60px;
+    height: 1px;
+    background: green;
+    display: inline-block;
+}
+.line{
+    line-height: 8px;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top:0;
+    background: black;
+    opacity: 0.7;
+    z-index: 2;
+    transition: .5s;
+    
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+  color: orangered;
+}
+
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.logoParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.titlesss{
+    margin-bottom: -20px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* font-family: 'Gabriela', serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+/* FEATURES */
+
+#content{
+    margin-top: -590px;
+    margin-left: 130px;
+    margin-right: -200px;
+	opacity: 0.8;
+	background-color: white;
+	color: black;
+	box-shadow: none;
+	width: 84%;
+	padding: 45px;
+
+	
+}
+
+
+
+.feature-row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature-col{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 300px;
+   
+}
+.feature-col img{
+    width: 200px;
+}
+
+.feature-col>a{
+    display: inline-block;
+}
+
+
+@media(max-width:450px){
+    .container{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    #header{
+        min-height: 100vh;
+        background-image: none;
+        /* background-size: 100%;
+        background-repeat: no-repeat; */
+    }
+    
+    
+    .header-text{
+        margin-top: 20px;
+    }
+
+    #menuBtn{
+        right: 20px;
+    }
+
+    #features{
+        margin-top: -20px;
+    }
+
+    .button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media(max-width:1000px){
+    #header{
+        background-image: none;
+        /* background-size: 100%;
+        background-repeat: no-repeat; */
+    }
+    
+}
+            </style>
+    </head>
+    <body id="body1">
+        <section id="header">
+            <div class="container">
+                <div class="logoParent">
+                    <div><img src="images/logo_spark.png" class="logo"></div>
+                    <div class="titlesss"><b style="color: black;">Bank of Sparks</b></div>
+                    <div><img src="images/logo_spark.png" class="logo"></div>
+                
+        </section>
+        <nav id="sideNav">
+            <ul>
+                <li><a href="main.html">➤HOME</a></li>
+                <li><a href="userss.php">➤CUSTOMERS INFO</a></li>
+                <li><a href="history.php">➤TRANSACTION HISTORY</a></li>
+                <li><a href="users.php">➤TRANSFER MONEY</a></li>
+                <li><a href="Register.php">➤ADD NEW USER</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu2.png" id="menuBtn">
+
+
+<!---FEATURES--->
+<div id="content">
+<p>
+    <center><h1 style="font-family: 'Brush Script MT', cursive; font-size: xx-large;">✦Sparks Bank✦</h1></center></p>
+    <center><h2 style="color: grey;">Online Banking Simplified</h2></center></p></br>
+    <center><h3>No more waiting in the long queues ,transfer the money very conveniently with the help of our Bank of Sparks System.</h3></center>
+</p></br></br>
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="images/customers1.png">
+            </br><p>Information about all  </br>Customer's</p> </br>
+               <a href="userss.php"> <button class="button" >CUSTOMERS INFO</button></a>
+            </div>
+            <div class="feature-col">
+                <img src="images/history2.png">
+            </br><p>Transaction Table which record</br>all Transfers happened</p> </br>
+                <a href="history.php"><button class="button" >TRANSACTION HISTORY</button></a>
+            </div>
+            <div class="feature-col">
+                <img src="images/transferMoney2.png">
+            </br><p>Easily Transfer Money from</br>One's account to Another's</p> </br>
+                <a href="users.php"><button class="button" >TRANSFER MONEY</button></a>
+            </div>
+            <div class="feature-col">
+                <img src="images/register.png">
+            </br><p>Register New User to take</br>Benefit of Bank's Services</p> </br>
+                <a href="Register.php"><button class="button">ADD NEW USER</button></a>
+            </div>
+        </div>
+        
+    </section>
+
+</div>
+
+<!-- FOOTER-->
+
+
+
+        <script>
+            var menuBtn=document.getElementById("menuBtn");
+            var sideNav=document.getElementById("sideNav");
+            sideNav.style.right="-250px"
+            menuBtn.onclick=function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0px";
+                }
+                else{
+                    sideNav.style.right="-250px";
+                }
+            }
+        </script>
+    </body>
+</html>
